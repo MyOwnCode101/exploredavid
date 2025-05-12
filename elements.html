@@ -8,18 +8,18 @@
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   <style>
     .team-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 3rem;
       padding: 2rem 0;
+      align-items: start;
     }
     .team-member {
       background: #ffffff;
       border: 2px solid #1a1a1a;
       border-radius: 16px;
       padding: 2rem;
-      max-width: 450px;
+      max-width: 100%;
       width: 100%;
       text-align: center;
       color: #000;
