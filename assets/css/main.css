@@ -35,6 +35,11 @@ footer, header, hgroup, menu, nav, section {
 .goog-logo-link {
   display: none !important;
 }
+/* Hides "Powered by Google" branding */
+.goog-logo-link,
+.goog-te-gadget > span:nth-child(3) {
+  display: none !important;
+}
 
 .goog-te-gadget > span:nth-child(3) {
   display: none !important;
