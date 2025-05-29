@@ -28,23 +28,31 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
+/* Shrink spacing and branding without breaking the dropdown */
 #google_translate_element {
   display: inline-block;
+  min-width: 150px;
   margin-left: 1.5rem;
-  min-width: 140px;
-}
-
-.goog-logo-link {
-  display: none !important;
-}
-.goog-te-gadget > span:not(:first-child) {
-  display: none !important;
+  margin-top: 4px;
 }
 
 .goog-te-gadget {
   font-size: 0.95rem !important;
   font-family: inherit !important;
   color: inherit !important;
+  line-height: 1.2;
+}
+
+/* Only hide the Google logo and extra branding */
+.goog-logo-link {
+  display: none !important;
+}
+
+.goog-te-gadget .goog-te-combo {
+  margin: 0 !important;
+  padding: 3px 6px !important;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
 body {
 	line-height: 1;
