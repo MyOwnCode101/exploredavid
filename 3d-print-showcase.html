@@ -7,6 +7,39 @@
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .print-description p {
+      line-height: 1.8;
+      font-size: 1.05em;
+    }
+
+    @media (max-width: 600px) {
+      .print-description p {
+        font-size: 1em;
+      }
+    }
+  </style>
 </head>
 <body class="is-preload">
   <div id="wrapper">
@@ -80,7 +113,7 @@
         </section>
       </section>
     </footer>
-    
+
     <div id="copyright">
       <ul><li>&copy; 2025 ExploreDavid</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
     </div>
