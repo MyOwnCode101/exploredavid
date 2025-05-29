@@ -29,29 +29,29 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 /* Shrink spacing and branding without breaking the dropdown */
+/* Container styling for spacing */
 #google_translate_element {
   display: inline-block;
-  min-width: 150px;
   margin-left: 1.5rem;
   margin-top: 4px;
 }
 
-.goog-te-gadget {
-  font-size: 0.95rem !important;
-  font-family: inherit !important;
-  color: inherit !important;
-  line-height: 1.2;
-}
-
-/* Only hide the Google logo and extra branding */
+/* Keep the dropdown, hide only the "Powered by Google" link */
 .goog-logo-link {
   display: none !important;
 }
 
-.goog-te-gadget .goog-te-combo {
-  margin: 0 !important;
-  padding: 3px 6px !important;
-  border-radius: 4px;
+/* DO NOT hide all spans — that's what breaks it */
+.goog-te-gadget span {
+  font-size: 0.95rem !important;
+  font-family: inherit !important;
+}
+
+/* Optional: style the dropdown */
+.goog-te-combo {
+  padding: 6px 8px;
+  border-radius: 5px;
+  font-size: 0.95rem;
   border: 1px solid #ccc;
 }
 body {
