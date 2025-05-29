@@ -28,6 +28,10 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
+.goog-logo-link,
+  .goog-te-gadget span {
+    display: none !important; /* hides "powered by Google" */
+  }
 body {
 	line-height: 1;
 }
