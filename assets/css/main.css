@@ -28,10 +28,13 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
-.goog-logo-link,
-  .goog-te-gadget span {
-    display: none !important; /* hides "powered by Google" */
-  }
+/* Only hide the "Powered by Google" logo/text — keep the dropdown */
+.goog-logo-link {
+  display: none !important;
+}
+.goog-te-gadget > span:not(:first-child) {
+  display: none !important;
+}
 body {
 	line-height: 1;
 }
