@@ -28,26 +28,6 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
-.nav-tools {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
-  margin-top: 0.5rem;
-}
-
-.nav-tools .icons {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 1.2rem;
-}
-
-#google_translate_element {
-  margin-left: auto;
-  min-width: 160px;
-}
-
 body {
 	line-height: 1;
 }
