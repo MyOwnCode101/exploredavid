@@ -28,6 +28,15 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
+#google_translate_element {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 5px;
+}
+.goog-te-gadget {
+  font-size: 0.9rem !important;
+  font-family: inherit !important;
+}
 
 body {
 	line-height: 1;
