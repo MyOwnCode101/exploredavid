@@ -1,26 +1,20 @@
-
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>How We Did It - ExploreDavid</title>
+		<title>Technology & Process</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<script type="text/javascript">
-  		function googleTranslateElementInit() {
-    			new google.translate.TranslateElement({
-      				pageLanguage: 'en',
-      				includedLanguages: 'en,it,fr,de,es',
-      				layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
-    				}, 'google_translate_element');
-  			}
+			function googleTranslateElementInit() {
+				new google.translate.TranslateElement({
+					pageLanguage: 'en',
+					includedLanguages: 'en,it,fr,de,es',
+					layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+				}, 'google_translate_element');
+			}
 		</script>
 		<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 	</head>
@@ -42,7 +36,7 @@
 							<li><a href="creators.html">Meet the Team</a></li>
 						</ul>
 						<div id="google_translate_element" style="margin-left: 1rem;"></div>
-      						<p>‎ ‎ ‎ ‎ ‎ </p>
+      					<p>‎ ‎ ‎ ‎ ‎ </p>
 						<ul class="icons" style="gap: 1.2rem">
 							<li><a href="download-stl.html" class="icon solid fa-download"><span class="label">Download STL</span></a></li>
 							<li><a href="#main" class="icon solid fa-cube"><span class="label">Explore Model</span></a></li>
@@ -58,13 +52,22 @@
 									<span class="date">May 2025</span>
 									<h1>How We Brought<br />
 									David to Digital Life</h1>
-									<p>We combined physical precision with digital innovation using 3D printing, modeling, and web technologies to reimagine Michelangelo’s masterpiece for the modern era.</p>
+									<p>ExploreDavid.com was engineered with precision, performance, and clarity in mind.</p>
 								</header>
-								<div class="image main"><img src="images/pic01.jpg" alt="Rendering the statue" /></div>
-								<p>The physical aspect of the project was executed using a Bambu Lab 3D printer, known for its speed and reliability. The digital model of David was carefully optimized and printed in high resolution, allowing us to faithfully reproduce the sculpture's fine anatomical details.</p>
-								<p>For the online experience, we built a responsive website using a blend of <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. We used the <code>&lt;model-viewer&gt;</code> component by Google to render the 3D model in real time directly in the browser. This allowed users to rotate, zoom, and explore David from all angles, even on mobile devices.</p>
-								<p>Styling was handled with the help of the HTML5 UP “Massively” template, adapted to match the theme of classical beauty meeting futuristic design. We ensured accessibility, cross-device compatibility, and performance optimization to make the experience smooth for everyone.</p>
-								<p>This project is a tribute to blending timeless culture with today’s accessible technology. From slicing in Bambu Studio to hosting the interactive model on the web, every part was driven by a passion for art and a love for innovation.</p>
+
+								<p>ExploreDavid.com is the result of a full-stack web development effort led by Lucio Valerio Carucci, with a clear focus on performance, accessibility, and modern web standards. The project was built using static HTML5, CSS3, and vanilla JavaScript to ensure maximum compatibility across all browsers and devices. The layout is based on a responsive design that adapts smoothly to desktop and mobile viewports, leveraging media queries and a grid-flex hybrid system for layout control. The overall styling was handled through a custom CSS file with minimal reliance on external frameworks to reduce page load times.</p>
+
+								<p>The site is hosted via GitHub Pages, which offers both static content delivery and free HTTPS with automatic certificate renewal. A custom domain—ExploreDavid.com—was registered and connected to GitHub Pages using DNS configuration. This involved setting up A records pointing to GitHub’s IP addresses and configuring a CNAME file inside the repository root to ensure consistent domain mapping. DNS propagation was monitored and verified using external tools to ensure the domain resolved correctly from global locations.</p>
+
+								<p>SEO considerations were built into the site’s architecture from the ground up. Each page contains descriptive <code>&lt;title&gt;</code>, <code>&lt;meta name="description"&gt;</code>, and <code>&lt;meta name="viewport"&gt;</code> tags, optimized for search engine indexing and social media previews. The <code>robots.txt</code> file and a correctly formatted <code>sitemap.xml</code> were created and submitted to Google Search Console to facilitate indexing by search engines. Clean and semantic HTML structure—using <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> tags—ensures crawlability and accessibility.</p>
+
+								<p>Navigation was manually implemented without the use of client-side routing, to avoid unnecessary dependencies. Each page is pre-rendered and stored as a separate HTML file, including <code>index.html</code>, <code>download-stl.html</code>, <code>how-it-works.html</code>, <code>sharing-the-vision.html</code>, and <code>elements.html</code> (team page). The navbar is static across pages, manually maintained to reflect active states using class toggling. Icons were added using Font Awesome, integrated via a CDN link for performance, and each icon is wrapped with <code>aria-label</code> spans to improve accessibility.</p>
+
+								<p>Interactive elements, like the embedded Sketchfab viewer, were inserted using iframe containers, with their dimensions optimized through inline CSS and responsive wrappers to maintain aspect ratios. No third-party analytics or cookies are used, ensuring fast performance and a privacy-friendly design.</p>
+
+								<p>Google Translate integration was added via script injection in the navbar, using a language selector placed before the icon menu. Positioning was handled with relative and margin-based CSS adjustments. A translation script is loaded asynchronously and does not block rendering.</p>
+
+								<p>In conclusion, ExploreDavid.com is more than just a website—it's a carefully engineered digital platform. Every line of code, every DNS record, and every browser behavior was directly managed, tested, and deployed by Lucio Valerio Carucci to ensure not just a clean user experience, but a technically sound and future-ready platform.</p>
 							</section>
 
 					</div>
